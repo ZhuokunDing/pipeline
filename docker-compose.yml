@@ -10,6 +10,8 @@ services:
       - /home/zhuokund/Dropbox/atlab/notebooks:/notebooks/local
       # - /home/pipeline_data/:/tmp/
       - .:/data/pipeline/
+      - ../stimuli:/data/stimuli/
+      - ../stimulus-pipeline:/data/stimulus-pipeline/
     env_file: .env
     environment:
       - DISPLAY=$DISPLAY
